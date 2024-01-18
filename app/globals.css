@@ -2,26 +2,214 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities {
+  .font-cursive {
+    font-family: "Edu Tas Beginner", cursive;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+:root {
+  --base-font-size: 16px;
+  --heading-font-font-family: ltc-bodoni-175;
+  --heading-font-font-style: normal;
+  --heading-font-font-weight: 500;
+  --heading-font-text-transform: none;
+  --heading-font-letter-spacing: 0em;
+  --heading-font-line-height: 1.4em;
+  --body-font-font-family: "Amiri", serif;
+  --body-font-font-style: normal;
+  --body-font-font-weight: 300;
+  --body-font-font-size: 19px;
+  --body-font-text-transform: none;
+  --body-font-letter-spacing: 0em;
+  --body-font-line-height: 1.8em;
+  --font-family: "Edu TAS Beginner", cursive;
+  --font-family2: "League Spartan", sans-serif;
+  --font-family3: "Montserrat Alternates", sans-serif;
 }
+.home{
+  background-color: #ffffff;
+}
+
+.menu-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 5em;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+  background-color: white;
+  padding: 5px;
+  margin-top: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+
+  animation: slideUp 1s forwards;
+  opacity: 0;
+}
+
+.menu-popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+.menu-popup a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2em auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  font-size: 23px;
+  font-style: var(--heading-font-font-family);
+  cursor: pointer;
+}
+
+.menu-popup a:hover {
+  background-color: #f1f1f1;
+}
+
+.home h2 {
+  font-family: var(--heading-font-font-family);
+  font-style: var(--heading-font-font-style);
+  font-weight: var(--heading-font-font-weight);
+  line-height: var(--heading-font-line-height);
+  letter-spacing: var(--heading-font-letter-spacing);
+  text-transform: var(--heading-font-text-transform);
+}
+
+.home-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+}
+
+.home1Image-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.home1Image-fade{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+.home2Image-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.home2Image-fade {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+
+.home-fade{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+
+.home-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s, visibility 1.5s;
+}
+.home2-fade{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+
+.home2-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s, visibility 1.5s;
+}
+
+.home3Image-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.home3Image-fade {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+
+.home3-fade{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+.home3-visible{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 3s, visibility 3s;
+}
+
+.home-welcome_head, .home-welcome2Head, .home-welcome3Head {
+  vertical-align: inherit; 
+  color: #AFA27B;
+  font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 10.72px 0px;
+}
+.home-welcome_content, .home-welcome2, .home-welcome3{
+  color: #2D3246;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 0;
+  margin: 22px 29px;
+}
+.home-welcome2Head, .home-welcome3Head{
+  margin: 22px 0 0 29px;
+}
+
+.why-choose-us {
+  font-family: var(--font-family);
+  padding: 22px;
+  margin-top: 70px;
+  letter-spacing: 0.5px;
+  font-size: 22px;
+}
+
+.home-container_image1 {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin: 0px 0px 30px;
+}
+
+.home-container_image2 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
