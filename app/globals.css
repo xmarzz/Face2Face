@@ -8,25 +8,6 @@
   }
 }
 
-:root {
-  --base-font-size: 16px;
-  --heading-font-font-family: ltc-bodoni-175;
-  --heading-font-font-style: normal;
-  --heading-font-font-weight: 500;
-  --heading-font-text-transform: none;
-  --heading-font-letter-spacing: 0em;
-  --heading-font-line-height: 1.4em;
-  --body-font-font-family: "Amiri", serif;
-  --body-font-font-style: normal;
-  --body-font-font-weight: 300;
-  --body-font-font-size: 19px;
-  --body-font-text-transform: none;
-  --body-font-letter-spacing: 0em;
-  --body-font-line-height: 1.8em;
-  --font-family: "Edu TAS Beginner", cursive;
-  --font-family2: "League Spartan", sans-serif;
-  --font-family3: "Montserrat Alternates", sans-serif;
-}
 .home{
   background-color: #ffffff;
 }
@@ -92,20 +73,11 @@
   background-color: #f1f1f1;
 }
 
-.home h2 {
-  font-family: var(--heading-font-font-family);
-  font-style: var(--heading-font-font-style);
-  font-weight: var(--heading-font-font-weight);
-  line-height: var(--heading-font-line-height);
-  letter-spacing: var(--heading-font-letter-spacing);
-  text-transform: var(--heading-font-text-transform);
-}
-
 .home-welcome {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   transition: opacity 0.5s;
 }
 
@@ -181,7 +153,9 @@
   font-family: "Playfair Display", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 10.72px 0px;
+  margin-left: 29px;
 }
+
 .home-welcome_content, .home-welcome2, .home-welcome3{
   color: #2D3246;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -189,6 +163,7 @@
   font-weight: 0;
   margin: 22px 29px;
 }
+
 .home-welcome2Head, .home-welcome3Head{
   margin: 22px 0 0 29px;
 }

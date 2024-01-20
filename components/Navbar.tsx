@@ -13,14 +13,13 @@ export default function Navbar() {
     setIsMenu(!isMenu);
   };
 
-
   return (
     <div className="navbar flex justify-between m-2 border-black border-1">
       <div className="mt-0">
         <Image src={beardman} width={74} height={75} alt="beardman" />
       </div>
-      <div className="my-2.5 font-bold font-Candal font-semibold uppercase text-5xl">
-        <h1>Face 2 Face</h1>
+      <div className="my-3 font-bold font-Candal font-semibold uppercase text-4xl">
+        <h1 className="">Face 2 Face</h1>
       </div>
       <div className="max-lg:hidden flex justify-between mx-2 mt-6 text-xl space-x-16">
         <Link href="/" className="nav-items">
