@@ -1,5 +1,5 @@
 'use client'
-import Image1 from "@/public/image1.avif";
+import Image1 from "@/public/image1.jpg";
 import Image2 from "@/public/image2.avif";
 import Image3 from "@/public/image3.avif";
 import Image from "next/image";
