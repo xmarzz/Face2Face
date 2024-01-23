@@ -3,7 +3,7 @@ import beardman from "@/public/beardman2.svg";
 import Image from "next/image";
 import Menu from "@/public/menu-bar.png";
 import Cross from "@/public/cross.svg";
-import { useState, useEffect, useRef } from "react";
+import { useState} from "react";
 import Link from "next/link";
 
 export default function Navbar() {

@@ -38,7 +38,7 @@ export default function footer() {
         <div>
           <hr className="border-b border-solid border-gray-800"/>
         </div>
-        <div className="text-center text-gray-600 text-sm m-2 mt-5">
+        <div className="text-center text-gray-600 text-sm mt-5 md-0">
           &copy; 2024 All rights reserved. | Made with ❤️ by WebCrafter
           Contact : <a href="mailto:marzelon@gmail.com" target="_blank">marzelon@gmail.com</a>
         </div>
