@@ -20,7 +20,7 @@ export default function Images() {
         <div className={`home-container_image1 ${myElementIsVisible0 ? 'home1Image-visible' : 'home1Image-fade'}`} ref={myRef0}>
           <Image src={Image1} alt="Image 1" className="image image1" />
         </div>
-        <div ref={myRef} className={`home-welcome ${myElementIsVisible ? 'home-visible' : 'home-fade'}`}>
+        <div ref={myRef} className={`home-welcome mt-4 ${myElementIsVisible ? 'home-visible' : 'home-fade'}`}>
           <h2 className="home-welcome_head">WELCOME TO FACE 2 FACE</h2>
           <p className="home-welcome_content">
             your go-to destination for grooming and

@@ -51,7 +51,7 @@ export default function Navbar() {
             height={35}
             alt="cross"
             onClick={toggleMenu}
-            className="mt-2 mr-2 max-lg:block cursor-pointer"
+            className="mt-1 mr-2 max-lg:block cursor-pointer"
           />
         )}
        
