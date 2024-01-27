@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="mt-0">
         <Image src={beardman} width={74} height={75} alt="beardman" />
       </div>
-      <div className="my-3 font-bold font-Candal font-semibold uppercase text-4xl">
+      <div className="my-4 font-bold font-Candal font-semibold uppercase text-4xl">
         <h1 className="">Face 2 Face</h1>
       </div>
       <div className="max-lg:hidden flex justify-between mx-2 mt-6 text-xl space-x-16">
@@ -36,22 +36,22 @@ export default function Navbar() {
         {!isMenu && (
           <Image
             src={Menu}
-            width={48}
-            height={47}
+            width={42}
+            height={33}
             alt="Menu"
             id="menu-bar"
             onClick={toggleMenu}
-            className="cursor-pointer"
+            className="cursor-pointer mt-1"
           />
         )}
         {isMenu && (
           <Image
             src={Cross}
-            width={35}
+            width={32}
             height={35}
             alt="cross"
             onClick={toggleMenu}
-            className="mt-1 mr-2 max-lg:block cursor-pointer"
+            className="mt-2 mr-2 max-lg:block cursor-pointer"
           />
         )}
        

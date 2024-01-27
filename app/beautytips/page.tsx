@@ -36,7 +36,7 @@ const Page = () => {
           onClick={handleClick}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             WHY PERSONAL GROOMING IS IMPORTANT?
           </h2>
           <div className="min-w-max">
@@ -69,7 +69,7 @@ const Page = () => {
           onClick={handleClick1}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             MAKES YOU MORE ATTRACTIVE
           </h2>
           <div className="min-w-max">
@@ -98,7 +98,7 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
           onClick={handleClick2}
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             BEING WELL GROOMED IS A HUGE CONFIDENCE BOOSTER
           </h2>
           <div className="min-w-max">
@@ -128,7 +128,7 @@ const Page = () => {
           onClick={handleClick3}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             {" "}
             YOUR FRIENDS AND PEERS WILL RESPECT YOU MORE
           </h2>
@@ -157,7 +157,7 @@ const Page = () => {
           onClick={handleClick4}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             GROOMING IS ONE OF THE EASIEST WAYS TO IMPROVE YOURSELF WITHOUT
             DOING MUCH WORK
           </h2>
@@ -187,7 +187,7 @@ const Page = () => {
           onClick={handleClick5}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md">
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
             TAKING CARE OF YOURSELF IS THE ULTIMATE FORM OF SELF-DISCIPLINE
           </h2>
           <div className="min-w-max">
