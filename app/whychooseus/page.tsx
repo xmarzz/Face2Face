@@ -49,11 +49,6 @@ const Page = () => {
           high standards of hygiene and cleanliness throughout our barbershop.
         </p>
 
-        <div>
-          <p>{t("greeting")}</p>
-          <button onClick={() => changeLanguage("en")}>English</button>
-          <button onClick={() => changeLanguage("ml")}>Malayalam</button>
-        </div>
       </div>
     </div>
   );

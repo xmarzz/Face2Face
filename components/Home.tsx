@@ -4,7 +4,9 @@ import Image2 from "@/public/image2.avif";
 import Image3 from "@/public/image3.avif";
 import Image from "next/image";
 import { useInView } from 'react-intersection-observer'; 
-
+import '../components/i18n.js'
+import LanguageSelector from '../components/languageSelector.js'
+import { useTranslation } from 'next-i18next'
 
 export default function Images() {
    
@@ -13,9 +15,13 @@ export default function Images() {
   const { ref: myRef2, inView : myElementIsVisible2} = useInView() 
   const { ref: myRef3, inView : myElementIsVisible3} = useInView() 
    
+  const {t} = useTranslation()
 
   return (
     <div className="home">
+       <div className="cursor-pointer"><LanguageSelector/>
+       <div><h1>{t("greeting")}</h1></div>
+       </div>
       <div className="home-container">
         <div className={`home-container_image1 ${myElementIsVisible0 ? 'home1Image-visible' : 'home1Image-fade'}`} ref={myRef0}>
           <Image src={Image1} alt="Image 1" className="image image1" />
@@ -53,7 +59,6 @@ export default function Images() {
             routine.
           </p>
         </div>
-
       </div>
     </div>
   );
