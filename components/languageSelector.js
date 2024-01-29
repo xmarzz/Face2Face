@@ -1,34 +1,28 @@
-import { useTranslation } from "next-i18next";
-import React from "react";
-
-const languages = [
-  { code: "en", lang: "English" },
-  { code: "mal", lang: "malayalam" },
-];
-
+import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const LanguageSelector = () => {
+   
 
-    const { i18n } = useTranslation();
-    const changeLanguage = (lng) => {
-     i18n.changeLanguage(lng)
-    };
+    const {i18n} = useTranslation()
+
+ 
+
+ const changeToEnglish=()=>{
+      i18n.changeLanguage('en')
+ }
+ 
+ const changeToMalayalam=()=>{
+   i18n.changeLanguage('ml')
+ }
 
   return (
-    <div className="flex flex-row">
-      {languages.map((lng) => {
-        return (
-          <div
-            key={lng.code}
-            className={lng.code === i18n.language}
-            onClick={() => changeLanguage(lng.code)}
-          >
-            {lng.lang}
-          </div>
-        );
-      })}
+    <div className='flex flex-row m-2'>
+    
+      <div onClick={changeToEnglish} className="m-2 p-2">english</div>
+      <div onClick={changeToMalayalam} className='m-2 p-2'>malayalam</div>
     </div>
-  );
-};
+  )
+}
 
-export default LanguageSelector;
+export default LanguageSelector

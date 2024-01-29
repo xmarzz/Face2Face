@@ -16,8 +16,7 @@ export default function footer() {
                 Locate Here
               </a>
               <div className="m-1.5">
-                {" "}
-                <FaMapLocationDot />{" "}
+                <FaMapLocationDot />
               </div>
             </div>
           </div>
