@@ -19,18 +19,18 @@ export default function Images() {
   
   return (
     <div className="home">
-      <div>
+      <div className="">
         <LanguageSelector/>
       </div>
 
       <div className="home-container">
         <div className={`home-container_image1 ${myElementIsVisible0 ? 'home1Image-visible' : 'home1Image-fade'}`} ref={myRef0}>
-          <Image src={Image1} alt="Image 1" className="image image1" />
+          <Image src={Image1} alt="Image 1" className="image image1"/>
         </div>
         <div ref={myRef} className={`home-welcome mt-4 ${myElementIsVisible ? 'home-visible' : 'home-fade'}`}>
           <h2 className="home-welcome_head">WELCOME TO FACE 2 FACE</h2>
           <p className="home-welcome_content">
-          <div>{t('homePara1')}</div>
+          {t('homePara1')}
           </p>
         </div>
         <div ref={myRef2} className={`home-container_image2 ${myElementIsVisible2 ? 'home2Image-visible' : 'home2Image-fade'}`}>
@@ -39,7 +39,7 @@ export default function Images() {
         <div>
           <p className={`home-welcome2Head ${myElementIsVisible2 ? 'home2-visible' : 'home2-fade'}`}>Upgrade your style</p>
           <p className={`home-welcome2 ${myElementIsVisible2 ? 'home2-visible' : 'home2-fade'}`}>
-          <div>{t('homePara2')}</div>
+          {t('homePara2')}
           </p>
         </div>
         <div ref={myRef3} className={`home-container_image3 ml-[12px] mr-[12px] ${myElementIsVisible3 ? 'home3Image-visible' : 'home3Image-fade'}`} >
@@ -48,7 +48,7 @@ export default function Images() {
         <div className={`home-discover ${myElementIsVisible3 ? 'home3-visible' : 'home3-fade' }`}>
           <p className={`home-welcome3Head ${myElementIsVisible3 ? 'home2-visible' : 'home2-fade'}`}>More than just a haircut</p>
           <p className="home-welcome3">
-          <div>{t('homePara3')}</div>
+          {t('homePara3')}
           </p>
         </div>
       </div>

@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
+import LanguageSelector from "@/components/languageSelector";
+import '../../components/i18n'
+import { useTranslation } from "react-i18next";
 
 const Page = () => {
   const [drop, setDrop] = useState(false);
@@ -29,15 +32,20 @@ const Page = () => {
     setDrop5(!drop5);
   };
 
+  const {t, i18n } = useTranslation()
+
   return (
     <div className="m-2 mt-12">
+      <div className="">
+        <LanguageSelector/>
+      </div>
       <div className="m-2 bg-slate-200 pt-6 pl-12 pr-8 pb-6 rounded-2xl">
         <div
           onClick={handleClick}
           className="cursor-pointer flex flex-row justify-between"
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            WHY PERSONAL GROOMING IS IMPORTANT?
+            {t("tipsHeader1")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -54,13 +62,7 @@ const Page = () => {
         <p
           className={`mt-4 font-brandon text-sm text-center ${drop ? "" : "hidden "}`}
         >
-          If you ask young men about grooming, most will have to agree that it
-          should be part of everyday life. So what’s grooming? It’s basically
-          taking a bath, shaving your facial hair, applying deodorant, taking a
-          haircut, and more! It’s a plethora of habits and actions that aims to
-          give you a neat and tidy appearance. One of our goals is to educate
-          the gents on why grooming is important. Here are some reasons as to
-          why it’s essential and integral for gents like you.{" "}
+         {t('tipsPara1')}
         </p>
       </div>
 
@@ -70,7 +72,8 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            MAKES YOU MORE ATTRACTIVE
+            
+          {t("tipsHeader2")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -85,11 +88,7 @@ const Page = () => {
           </div>
         </div>
         <p className={`mt-4 text-center ${drop1 ? "" : "hidden"}`}>
-          First things first, grooming greatly improves your physical
-          appearance. A GATSBY Gent who looks clean and smells good will always
-          be identified as someone who is attractive. Simple measures like
-          styling your hair with pomade and removing oil on your face every now
-          and then can do wonders on how you look.{" "}
+          {t('tipsPara2')}
         </p>
       </div>
 
@@ -99,7 +98,7 @@ const Page = () => {
           onClick={handleClick2}
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            BEING WELL GROOMED IS A HUGE CONFIDENCE BOOSTER
+          {t("tipsHeader3")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -114,12 +113,7 @@ const Page = () => {
           </div>
         </div>
         <p className={`mt-4 text-center ${drop2 ? "" : "hidden"}`}>
-          Clean-looking people have one thing in common - they radiate
-          confidence and good vibes. Being well-groomed helps you navigate your
-          way in social gatherings and lets you have an easier time making
-          friends. Being confident is the foundation of a successful gent, so if
-          you want to be confident, taking hygiene seriously is a good first
-          step.
+          {t("tipsPara3")}
         </p>
       </div>
 
@@ -129,8 +123,8 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            {" "}
-            YOUR FRIENDS AND PEERS WILL RESPECT YOU MORE
+            
+          <div>{t("tipsHeader4")}</div>
           </h2>
           <div className="min-w-max">
             <IoMdArrowDropdown
@@ -144,11 +138,7 @@ const Page = () => {
           </div>
         </div>
         <p className={`mt-4 text-center ${drop3 ? "" : "hidden"}`}>
-          Did you know that cleanliness is usually associated with being smart?
-          A well-groomed young man always gives off a good impression to his
-          classmates, friends, and those who he’s meeting for the first time. A
-          true GATSBY gent prides himself in his appearance, something that
-          other people will surely notice.
+          {t("tipsPara4")}
         </p>
       </div>
 
@@ -158,8 +148,8 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            GROOMING IS ONE OF THE EASIEST WAYS TO IMPROVE YOURSELF WITHOUT
-            DOING MUCH WORK
+            
+          <div>{t("tipsHeader5")}</div>
           </h2>
           <div className="min-w-max">
             {" "}
@@ -174,11 +164,7 @@ const Page = () => {
           </div>
         </div>
         <p className={`mt-4 text-center ${drop4 ? "" : "hidden"}`}>
-          Personal grooming is the cheapest and most effective way to improve
-          your overall style and appearance without having to spend so much time
-          and money. Taking a shower, using a shaver, and using affordable, yet
-          essential grooming and hairstyle products for men such as GATSBY are
-          all you need to be on top of your grooming routine.{" "}
+          {t("tipsPara5")}
         </p>
       </div>
 
@@ -188,7 +174,8 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
         >
           <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            TAKING CARE OF YOURSELF IS THE ULTIMATE FORM OF SELF-DISCIPLINE
+            
+          {t("tipsHeader6")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -203,13 +190,7 @@ const Page = () => {
           </div>
         </div>
         <p className={`mt-4 text-center ${drop5 ? "" : "hidden"}`}>
-          Personal hygiene is not much work, but doing it on a daily basis is
-          the real challenge to many. Taking care of yourself everyday will not
-          only keep you smelling fresh and clean, but also improve your
-          self-discipline and more importantly form good habits. As we’ve said
-          before, grooming doesn’t have to be expensive! That’s why GATSBY is
-          your buddy to help you achieve your grooming goals without having to
-          exhaust your wallet. Visit our website here to check all our products.
+          {t("tipsPara6")}
         </p>
       </div>
     </div>
