@@ -27,7 +27,6 @@
   margin-top: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-
   animation: slideUp 1s forwards;
   opacity: 0;
 }
@@ -167,7 +166,6 @@
 
 .why-choose-us {
   font-family: var(--font-family);
-  padding: 22px;
   letter-spacing: 0.5px;
   font-size: 22px;
 }

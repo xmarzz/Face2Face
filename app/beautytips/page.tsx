@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import LanguageSelector from "@/components/languageSelector";
-import '../../components/i18n'
+import "../../components/i18n";
 import { useTranslation } from "react-i18next";
 
 const Page = () => {
@@ -32,19 +32,19 @@ const Page = () => {
     setDrop5(!drop5);
   };
 
-  const {t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
 
   return (
-    <div className="m-2 mt-12">
+    <div className="m-2 mt-0">
       <div className="">
-        <LanguageSelector/>
+        <LanguageSelector />
       </div>
       <div className="m-2 bg-slate-200 pt-6 pl-12 pr-8 pb-6 rounded-2xl">
         <div
           onClick={handleClick}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
+          <h2 className="text-md mt-2 ml-2 max-w-md font-semibold font-caudex">
             {t("tipsHeader1")}
           </h2>
           <div className="min-w-max">
@@ -60,9 +60,9 @@ const Page = () => {
           </div>
         </div>
         <p
-          className={`mt-4 font-brandon text-sm text-center ${drop ? "" : "hidden "}`}
+          className={`mt-4 text-sm text-center ${drop ? "" : "hidden "}`}
         >
-         {t('tipsPara1')}
+          {t("tipsPara1")}
         </p>
       </div>
 
@@ -71,9 +71,8 @@ const Page = () => {
           onClick={handleClick1}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            
-          {t("tipsHeader2")}
+          <h2 className="text-md mt-2 ml-2 max-w-md font-semibold font-caudex">
+            {t("tipsHeader2")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -87,8 +86,8 @@ const Page = () => {
             />
           </div>
         </div>
-        <p className={`mt-4 text-center ${drop1 ? "" : "hidden"}`}>
-          {t('tipsPara2')}
+        <p className={` mt-4 text-center text-sm ${drop1 ? "" : "hidden"}`}>
+          {t("tipsPara2")}
         </p>
       </div>
 
@@ -97,8 +96,8 @@ const Page = () => {
           className="cursor-pointer flex flex-row justify-between"
           onClick={handleClick2}
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-          {t("tipsHeader3")}
+          <h2 className="font-caudex text-md mt-2 ml-2 max-w-md font-semibold">
+            {t("tipsHeader3")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -112,7 +111,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <p className={`mt-4 text-center ${drop2 ? "" : "hidden"}`}>
+        <p className={` mt-4 text-center text-sm ${drop2 ? "" : "hidden"}`}>
           {t("tipsPara3")}
         </p>
       </div>
@@ -122,9 +121,8 @@ const Page = () => {
           onClick={handleClick3}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            
-          <div>{t("tipsHeader4")}</div>
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md font-semibold">
+            <div>{t("tipsHeader4")}</div>
           </h2>
           <div className="min-w-max">
             <IoMdArrowDropdown
@@ -137,7 +135,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <p className={`mt-4 text-center ${drop3 ? "" : "hidden"}`}>
+        <p className={`mt-4 text-center text-sm ${drop3 ? "" : "hidden"}`}>
           {t("tipsPara4")}
         </p>
       </div>
@@ -147,9 +145,8 @@ const Page = () => {
           onClick={handleClick4}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            
-          <div>{t("tipsHeader5")}</div>
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md font-semibold">
+            <div>{t("tipsHeader5")}</div>
           </h2>
           <div className="min-w-max">
             {" "}
@@ -163,7 +160,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <p className={`mt-4 text-center ${drop4 ? "" : "hidden"}`}>
+        <p className={`mt-4 text-center text-sm ${drop4 ? "" : "hidden"}`}>
           {t("tipsPara5")}
         </p>
       </div>
@@ -173,9 +170,8 @@ const Page = () => {
           onClick={handleClick5}
           className="cursor-pointer flex flex-row justify-between"
         >
-          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md text-gray-500 font-semibold">
-            
-          {t("tipsHeader6")}
+          <h2 className="font-brandon text-md mt-2 ml-2 max-w-md font-semibold">
+            {t("tipsHeader6")}
           </h2>
           <div className="min-w-max">
             {" "}
@@ -189,7 +185,7 @@ const Page = () => {
             />
           </div>
         </div>
-        <p className={`mt-4 text-center ${drop5 ? "" : "hidden"}`}>
+        <p className={`mt-4 text-center text-sm ${drop5 ? "" : "hidden"}`}>
           {t("tipsPara6")}
         </p>
       </div>

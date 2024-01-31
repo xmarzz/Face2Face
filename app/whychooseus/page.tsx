@@ -16,7 +16,7 @@ const Page = () => {
 
   return (
     <div className="why-choose-us">
-      <div className="">
+      <div className="font-playfair text-sm">
         <LanguageSelector/>
       </div>
       <div

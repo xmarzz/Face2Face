@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageSelector = () => {
@@ -8,36 +8,42 @@ const LanguageSelector = () => {
 
   const changeToEnglish = () => {
     i18n.changeLanguage("en");
-
     setSelectedLanguage("english");
   };
 
   const changeToMalayalam = () => {
     i18n.changeLanguage("ml");
-
     setSelectedLanguage("malayalam");
   };
 
+  useEffect(() =>{
+    if(i18n.language === 'en') 
+      setSelectedLanguage("english")
+    else if(i18n.language === 'ml')
+     setSelectedLanguage("malayalam")
+    else 
+     setSelectedLanguage('english')
+    
+  },[])
+
   return (
-    <div className="flex flex-row m-2 justify-center">
+    <div className="flex flex-row justify-center mb-2 font-playfair">
       <div
         onClick={changeToEnglish}
-        className="m-2 p-2 cursor-pointer bg-slate-800"
-      >
-        english
+        className={`mb-2 mx-6 p-2 cursor-pointer bg-slate-800 rounded-md inline-flex items-center bg-white text-gray-700 shadow-lg rounded-full px-2 py-1 text-sm font-medium cursor-pointer select-none outline-none ring-0 transition-colors duration-280 ease-in-out transform translate-y-0 opacity-100 will-change-transform will-change-opacity z-0 ${selectedLanguage === 'english' ? "bg-[#0C090A] text-white" : ""}`}>
+        English
       </div>
-      <div
-        id="line"
-        className={`transition-all duration-500 ease-in-out ${selectedLanguage === "english" ? "move-to-left" : "move-to-right"}`}
-      ></div>
+
       <div
         onClick={changeToMalayalam}
-        className="m-2 p-2 cursor-pointer bg-slate-800"
+        className={`mb-2 mx-6 p-2 cursor-pointer bg-slate-800 rounded-md inline-flex items-center bg-white text-gray-700 shadow-lg rounded-full px-2 py-1 text-sm font-medium cursor-pointer select-none outline-none ring-0 transition-colors duration-280 ease-in-out transform translate-y-0 opacity-100 will-change-transform will-change-opacity z-0 ${selectedLanguage==='malayalam' ? "bg-[#0C090A] text-white" : ""}`}
       >
-        malayalam
+        Malayalam
       </div>
     </div>
   );
 };
 
 export default LanguageSelector;
+
+
