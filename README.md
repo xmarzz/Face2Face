@@ -1,6 +1,3 @@
-Certainly! Below is a sample README file for your mobile-friendly web app. You can replace the placeholder text with your actual app name, description, and screenshots as needed.
-
----
 
 # Mobile-Friendly Web App
 
