@@ -57,11 +57,10 @@
 } 
 
  .nav-items {
-  font-size: 18px;
-  color: white;
+  font-size: 14px;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.82);
   padding: 10px;
 }
 
@@ -82,16 +81,19 @@
   visibility: visible;
   transition: opacity 0.5s, visibility 0.5s;
 }
+
 .home1Image-fade{
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s, visibility 2s;
 }
+
 .home2Image-visible {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s, visibility 0.5s;
 }
+
 .home2Image-fade {
   opacity: 0;
   visibility: hidden;
@@ -202,4 +204,117 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 1.5s, visibility 1.5s;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+    .image1{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 720px;
+      max-height: 720px;
+      margin: 60px 0 0 0;
+    }
+
+    .home-container_part1{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    .home-welcome{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin: 150px 38px 38px 24px;
+      max-width: 650px;
+    }
+    .home-welcome_head{
+      font-size: 45px;
+    }
+    .home-welcome_content{
+      font-size: 32px;
+    } 
+    .image2{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 720px;
+      max-height: 720px;
+    }
+
+    .home-container_part2{
+      margin: 220px 0 0 0 ;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+    .home-welcome2_outside{
+      margin: 150px 38px 38px 24px;
+      max-width: 650px;
+    }
+    .home-welcome2Head{
+      font-size: 45px;
+    }
+    .home-welcome2{
+      font-size: 32px;
+    }
+
+    .home-container_part3{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 220px 0 220px 0;
+    }
+
+    .image3{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 720px;
+      max-height: 720px;
+    }
+ 
+    .home-discover{
+      margin: 150px 38px 38px 24px;
+      max-width: 650px;
+    }
+
+    .home-welcome3Head{
+      font-size: 45px;
+    }
+
+    .home-welcome3{
+      font-size: 32px;
+    }
+    .why-choose-us{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin: 120px 20px 20px 20px;
+    }
+    .why-choose-us-text{
+      max-width: 750px;
+    }
+    .image4{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 720px;
+      max-height: 720px;
+    }
+    .why-choose-us_head{
+      font-size: 42px;
+    }
+    .why-choose-us_para1, .why-choose-us_para2, .why-choose-us_para3, .why-choose-us_para4 {
+      font-size: 18px;
+    }
+    .beauty-tips-blog{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 820px;
+    }
+
 }

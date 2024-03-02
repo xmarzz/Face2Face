@@ -16,7 +16,7 @@ const Page = () => {
 
   return (
     <div className="why-choose-us">
-      <div className="font-playfair text-sm">
+      <div className="font-playfair text-sm lg:hidden">
         <LanguageSelector/>
       </div>
       <div
@@ -27,21 +27,21 @@ const Page = () => {
       </div>
       <div
         ref={myRef1}
-        className={`${myElementIsVisible1 ? "why-choose-us_visible" : "why-choose-us_fade"}`}
+        className={`why-choose-us-text ${myElementIsVisible1 ? "why-choose-us_visible" : "why-choose-us_fade"}`}
       >
-        <h2 className="why-choose-us_head">Why Choose Face 2 Face?</h2>
-        <p className="why-choose-us_para1">
-          {t('whyChooseUsPara1')}
-        </p>
-        <p className="why-choose-us_para2">
-          {t('whyChooseUsPara2')}
-        </p>
-        <p className="why-choose-us_para3">
-          {t('whyChooseUsPara3')}
-        </p>
-        <p className="why-choose-us_para4">
-          {t('whyChooseUsPara4')}
-        </p>
+          <h2 className="why-choose-us_head">Why Choose Face 2 Face?</h2>
+          <p className="why-choose-us_para1">
+            {t('whyChooseUsPara1')}
+          </p>
+          <p className="why-choose-us_para2">
+            {t('whyChooseUsPara2')}
+          </p>
+          <p className="why-choose-us_para3">
+            {t('whyChooseUsPara3')}
+          </p>
+          <p className="why-choose-us_para4">
+            {t('whyChooseUsPara4')}
+          </p>
 
       </div>
     </div>

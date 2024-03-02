@@ -21,8 +21,8 @@ export default function Navbar() {
       <div className="my-4 font-bold font-Candal font-semibold uppercase text-4xl">
         <h1 className="">Face 2 Face</h1>
       </div>
-      <div className="max-lg:hidden flex justify-between mx-2 mt-6 text-xl space-x-16">
-        <Link href="/" className="nav-items">
+      <div className="max-lg:hidden flex justify-between mx-2 mt-6 text-xl space-x-16 bg-white">
+        <Link href="/" className="nav-items bg-transparent	decoration-black">
           Home
         </Link>
         <Link href="/whychooseus" className="nav-items">
@@ -32,7 +32,7 @@ export default function Navbar() {
           beauty tips
         </Link>
       </div>
-      <div className="mt-3 hidden max-lg:block">
+      <div className="mt-3 hidden max-lg:block ">
         {!isMenu && (
           <Image
             src={Menu}

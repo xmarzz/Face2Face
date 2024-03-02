@@ -35,11 +35,11 @@ const Page = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="m-2 mt-0">
-      <div className="">
+    <div className="beauty-tips-blog m-2 mt-0">
+      <div className="lg:hidden">
         <LanguageSelector />
       </div>
-      <div className="m-2 bg-slate-200 pt-6 pl-12 pr-8 pb-6 rounded-2xl">
+      <div className=" m-2 bg-slate-200 pt-6 pl-12 pr-8 pb-6 rounded-2xl">
         <div
           onClick={handleClick}
           className="cursor-pointer flex flex-row justify-between"
